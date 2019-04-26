@@ -1,0 +1,13 @@
+<h1>Counted</h1>
+<a href="{% url 'home' %}">start again</a>
+<h2>Your text </h2>
+
+{{fulltext}}
+<br>
+<h2>Words count</h2>
+Total words: {{newwords}}
+<br><br><br>
+{% for key,value in worddic %}
+{{key}}={{value}}
+<br>
+{% endfor %}
